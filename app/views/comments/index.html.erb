@@ -14,9 +14,9 @@
     <% @comments.each do |comment| %>
       <tr>
         <td><%= comment.body %></td>
-        <td><%= link_to 'Show', comment %></td>
-        <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-        <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Показать', comment %></td>
+        <td><%= link_to 'Редактировать', edit_comment_path(comment) %></td>
+        <td><%= link_to 'Удалить', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,8 +24,8 @@
 
 <br>
 
-<%= link_to 'New Comment', new_comment_path %>
+<%= link_to 'Новый комментарий', new_comment_path %>
 
 <br>
 
-<%= link_to 'Home Page', welcom_index_path %>
+<%= link_to 'Главная', welcom_index_path %>
